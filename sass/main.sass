@@ -1,0 +1,94 @@
+@import 'var'
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    list-style: none
+    user-select: none
+
+body
+    width: 100vw
+    height: 100vh
+    background-image: url('https://media.discordapp.net/attachments/605820863912214538/892022387061702717/unknown.png')
+    overflow: hidden
+
+    main
+        width: 23vw
+        height: 70vh
+        border: 2px solid white
+        margin: 15vh 0vw 0vh 3vw
+        border-radius: 1vh
+        background-color: #5c5c5c48
+        @extend %border_bottom_radius
+
+        header
+            display: flex
+            height: 8vh
+            border-bottom: 1px solid $primary-color
+            background-color: #5c5c5c48
+            @extend %border_top_radius
+
+            .fas
+                font-size: 2rem
+                color: $primary-color
+                object-fit: contain
+                margin: 2.2vh 0vw 0vh 2vw
+
+            h2
+                font-family: $font-main
+                color: $primary-color
+                font-size: 1.9rem
+                margin: 2.2vh 0vw 0vh 4vw
+                font-weight: bolder
+                letter-spacing: 3px
+
+        button
+            width: 21.35vw
+            height: 5vh
+            margin: 0.9vh 0vw 0.2vh 0.6vw
+            border-radius: 1vh
+            border: 1px solid red
+            background-color: #5c5c5c48
+
+            p
+                font-family: $font-main
+                font-weight: 500
+                font-size: 1.3rem
+                color: $primary-color
+                text-align: center
+
+
+        ul::-webkit-scrollbar
+            width: 4px
+
+        ul::-webkit-scrollbar-thumb
+            background-color: $primary-color
+            border-top-right-radius: 4vh
+            border-bottom-right-radius: 10vh
+
+        ul
+            width: 22.8vw
+            height: 54.7vh
+            padding: 1vh
+            overflow: scroll
+            overflow-x: hidden
+
+
+            li
+                width: 99%
+                display: flex
+                margin: 0.9vh 0vw 0.2vh 0vw
+                height: 5vh
+                border: 1.5px solid $primary-color
+                text-align: center
+                border-radius: 1vh
+
+                p
+                    width: 99%
+                    margin: 0.6vh 0vw 0vh 0vw
+                    font-family: $font-main
+                    font-weight: 500
+                    font-size: 1.4rem
+                    color: $primary-color
+                    text-align: center
