@@ -57,10 +57,18 @@ body main button {
   border-radius: 1vh;
   border: 1px solid red;
   background-color: #5c5c5c48;
+  transition: transform 0.5s;
+  font-weight: 500;
+}
+body main button:hover {
+  background-color: #fc0505;
+  color: white;
+  font-weight: bolder;
+  transform: scale(1.02);
+  font-weight: 900;
 }
 body main button p {
   font-family: Roboto;
-  font-weight: 500;
   font-size: 1.3rem;
   color: white;
   text-align: center;
@@ -87,15 +95,22 @@ body main ul li {
   height: 5vh;
   border: 1.5px solid white;
   text-align: center;
+  color: white;
   border-radius: 1vh;
+  font-weight: 500;
+  transition: transform 0.3s;
+}
+body main ul li:hover {
+  background-color: #ffffff;
+  color: black;
+  font-weight: bolder;
+  transform: scale(1.02);
 }
 body main ul li p {
   width: 99%;
   margin: 0.6vh 0vw 0vh 0vw;
   font-family: Roboto;
-  font-weight: 500;
   font-size: 1.4rem;
-  color: white;
   text-align: center;
 }
 
